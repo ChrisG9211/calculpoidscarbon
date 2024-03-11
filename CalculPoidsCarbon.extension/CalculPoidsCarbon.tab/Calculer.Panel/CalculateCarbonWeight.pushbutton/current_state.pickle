@@ -1,0 +1,777 @@
+(lp0
+(dp1
+S'Impact sur le changement climatique (kgCO2e)'
+p2
+F51265.003679999994
+sS'Quantite'
+p3
+F466045.48799999995
+sS'Produit'
+p4
+VBéton - BIM & Carbone
+p5
+sS'Macro-composant de niveau 1'
+p6
+S'2_STR'
+p7
+sS'Macro-composant de niveau 0'
+p8
+S'Composant de base'
+p9
+sS'Version'
+p10
+S'Version 1'
+p11
+sS'Macro-composant de niveau 2'
+p12
+S'beton'
+p13
+sS'Unite'
+p14
+S'kg'
+p15
+sa(dp16
+S'Impact sur le changement climatique (kgCO2e)'
+p17
+F1344.4273499999999
+sS'Quantite'
+p18
+F3841.221
+sS'Produit'
+p19
+S'Sable, granulats, roches - BIM & Carbone'
+p20
+sS'Macro-composant de niveau 1'
+p21
+S'2_STR'
+p22
+sS'Macro-composant de niveau 0'
+p23
+S'Composant de base'
+p24
+sS'Version'
+p25
+S'Version 1'
+p26
+sS'Macro-composant de niveau 2'
+p27
+S'sable_granulats_roches'
+p28
+sS'Unite'
+p29
+S'kg'
+p30
+sa(dp31
+S'Impact sur le changement climatique (kgCO2e)'
+p32
+F22767.724800000004
+sS'Quantite'
+p33
+F6324.3680000000004
+sS'Produit'
+p34
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p35
+sS'Macro-composant de niveau 1'
+p36
+S'2_STR'
+p37
+sS'Macro-composant de niveau 0'
+p38
+S'Composant de base'
+p39
+sS'Version'
+p40
+S'Version 1'
+p41
+sS'Macro-composant de niveau 2'
+p42
+S'metaux'
+p43
+sS'Unite'
+p44
+S'kg'
+p45
+sa(dp46
+S'Impact sur le changement climatique (kgCO2e)'
+p47
+F558.75919999999996
+sS'Quantite'
+p48
+F151.01599999999999
+sS'Produit'
+p49
+S'Plastiques - BIM & Carbone'
+p50
+sS'Macro-composant de niveau 1'
+p51
+S'2_STR'
+p52
+sS'Macro-composant de niveau 0'
+p53
+S'Composant de base'
+p54
+sS'Version'
+p55
+S'Version 1'
+p56
+sS'Macro-composant de niveau 2'
+p57
+S'plastiques'
+p58
+sS'Unite'
+p59
+S'kg'
+p60
+sa(dp61
+S'Impact sur le changement climatique (kgCO2e)'
+p62
+F-34.651440000000001
+sS'Quantite'
+p63
+F192.50800000000001
+sS'Produit'
+p64
+VAutres matériaux biosourcés - BIM & Carbone
+p65
+sS'Macro-composant de niveau 1'
+p66
+S'2_STR'
+p67
+sS'Macro-composant de niveau 0'
+p68
+S'Composant de base'
+p69
+sS'Version'
+p70
+S'Version 1'
+p71
+sS'Macro-composant de niveau 2'
+p72
+S'autres_materiaux_biosources'
+p73
+sS'Unite'
+p74
+S'kg'
+p75
+sa(dp76
+S'Impact sur le changement climatique (kgCO2e)'
+p77
+F311123.01231000008
+sS'Quantite'
+p78
+F2828391.0210000006
+sS'Produit'
+p79
+VBéton - BIM & Carbone
+p80
+sS'Macro-composant de niveau 1'
+p81
+S'1_EPU'
+p82
+sS'Macro-composant de niveau 0'
+p83
+S'Composant de base'
+p84
+sS'Version'
+p85
+S'Version 1'
+p86
+sS'Macro-composant de niveau 2'
+p87
+S'beton'
+p88
+sS'Unite'
+p89
+S'kg'
+p90
+sa(dp91
+S'Impact sur le changement climatique (kgCO2e)'
+p92
+F354561.36479999986
+sS'Quantite'
+p93
+F98489.267999999967
+sS'Produit'
+p94
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p95
+sS'Macro-composant de niveau 1'
+p96
+S'1_EPU'
+p97
+sS'Macro-composant de niveau 0'
+p98
+S'Composant de base'
+p99
+sS'Version'
+p100
+S'Version 1'
+p101
+sS'Macro-composant de niveau 2'
+p102
+S'metaux'
+p103
+sS'Unite'
+p104
+S'kg'
+p105
+sa(dp106
+S'Impact sur le changement climatique (kgCO2e)'
+p107
+F15649.13141
+sS'Quantite'
+p108
+F142264.83100000001
+sS'Produit'
+p109
+VBéton - BIM & Carbone
+p110
+sS'Macro-composant de niveau 1'
+p111
+S'4_SOE'
+p112
+sS'Macro-composant de niveau 0'
+p113
+S'Composant de base'
+p114
+sS'Version'
+p115
+S'Version 1'
+p116
+sS'Macro-composant de niveau 2'
+p117
+S'beton'
+p118
+sS'Unite'
+p119
+S'kg'
+p120
+sa(dp121
+S'Impact sur le changement climatique (kgCO2e)'
+p122
+F12551.652000000002
+sS'Quantite'
+p123
+F3486.5700000000006
+sS'Produit'
+p124
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p125
+sS'Macro-composant de niveau 1'
+p126
+S'4_SOE'
+p127
+sS'Macro-composant de niveau 0'
+p128
+S'Composant de base'
+p129
+sS'Version'
+p130
+S'Version 1'
+p131
+sS'Macro-composant de niveau 2'
+p132
+S'metaux'
+p133
+sS'Unite'
+p134
+S'kg'
+p135
+sa(dp136
+S'Impact sur le changement climatique (kgCO2e)'
+p137
+F-586.56114000000002
+sS'Quantite'
+p138
+F3258.6730000000002
+sS'Produit'
+p139
+VAutres matériaux biosourcés - BIM & Carbone
+p140
+sS'Macro-composant de niveau 1'
+p141
+S'4_SOE'
+p142
+sS'Macro-composant de niveau 0'
+p143
+S'Composant de base'
+p144
+sS'Version'
+p145
+S'Version 1'
+p146
+sS'Macro-composant de niveau 2'
+p147
+S'autres_materiaux_biosources'
+p148
+sS'Unite'
+p149
+S'kg'
+p150
+sa(dp151
+S'Impact sur le changement climatique (kgCO2e)'
+p152
+F1181.9185000000002
+sS'Quantite'
+p153
+F3376.9100000000008
+sS'Produit'
+p154
+S'Sable, granulats, roches - BIM & Carbone'
+p155
+sS'Macro-composant de niveau 1'
+p156
+S'4_SOE'
+p157
+sS'Macro-composant de niveau 0'
+p158
+S'Composant de base'
+p159
+sS'Version'
+p160
+S'Version 1'
+p161
+sS'Macro-composant de niveau 2'
+p162
+S'sable_granulats_roches'
+p163
+sS'Unite'
+p164
+S'kg'
+p165
+sa(dp166
+S'Impact sur le changement climatique (kgCO2e)'
+p167
+F1994.3520000000003
+sS'Quantite'
+p168
+F166.19600000000003
+sS'Produit'
+p169
+S'Peinture - BIM & Carbone'
+p170
+sS'Macro-composant de niveau 1'
+p171
+S'4_SOE'
+p172
+sS'Macro-composant de niveau 0'
+p173
+S'Composant de base'
+p174
+sS'Version'
+p175
+S'Version 1'
+p176
+sS'Macro-composant de niveau 2'
+p177
+S'peinture'
+p178
+sS'Unite'
+p179
+S'kg'
+p180
+sa(dp181
+S'Impact sur le changement climatique (kgCO2e)'
+p182
+F24.408899999999999
+sS'Quantite'
+p183
+F6.5969999999999995
+sS'Produit'
+p184
+S'Plastiques - BIM & Carbone'
+p185
+sS'Macro-composant de niveau 1'
+p186
+S'4_SOE'
+p187
+sS'Macro-composant de niveau 0'
+p188
+S'Composant de base'
+p189
+sS'Version'
+p190
+S'Version 1'
+p191
+sS'Macro-composant de niveau 2'
+p192
+S'plastiques'
+p193
+sS'Unite'
+p194
+S'kg'
+p195
+sa(dp196
+S'Impact sur le changement climatique (kgCO2e)'
+p197
+F131736.71879999977
+sS'Quantite'
+p198
+F36593.532999999938
+sS'Produit'
+p199
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p200
+sS'Macro-composant de niveau 1'
+p201
+S'3_FAC'
+p202
+sS'Macro-composant de niveau 0'
+p203
+S'Composant de base'
+p204
+sS'Version'
+p205
+S'Version 1'
+p206
+sS'Macro-composant de niveau 2'
+p207
+S'metaux'
+p208
+sS'Unite'
+p209
+S'kg'
+p210
+sa(dp211
+S'Impact sur le changement climatique (kgCO2e)'
+p212
+F-1468.7414999999999
+sS'Quantite'
+p213
+F8159.6749999999993
+sS'Produit'
+p214
+VAutres matériaux biosourcés - BIM & Carbone
+p215
+sS'Macro-composant de niveau 1'
+p216
+S'3_FAC'
+p217
+sS'Macro-composant de niveau 0'
+p218
+S'Composant de base'
+p219
+sS'Version'
+p220
+S'Version 1'
+p221
+sS'Macro-composant de niveau 2'
+p222
+S'autres_materiaux_biosources'
+p223
+sS'Unite'
+p224
+S'kg'
+p225
+sa(dp226
+S'Impact sur le changement climatique (kgCO2e)'
+p227
+F922.95599000000038
+sS'Quantite'
+p228
+F8390.5090000000037
+sS'Produit'
+p229
+VBéton - BIM & Carbone
+p230
+sS'Macro-composant de niveau 1'
+p231
+S'3_FAC'
+p232
+sS'Macro-composant de niveau 0'
+p233
+S'Composant de base'
+p234
+sS'Version'
+p235
+S'Version 1'
+p236
+sS'Macro-composant de niveau 2'
+p237
+S'beton'
+p238
+sS'Unite'
+p239
+S'kg'
+p240
+sa(dp241
+S'Impact sur le changement climatique (kgCO2e)'
+p242
+F23264.872619999998
+sS'Quantite'
+p243
+F211498.84199999998
+sS'Produit'
+p244
+VBéton - BIM & Carbone
+p245
+sS'Macro-composant de niveau 1'
+p246
+S'6_VRD'
+p247
+sS'Macro-composant de niveau 0'
+p248
+S'Composant de base'
+p249
+sS'Version'
+p250
+S'Version 1'
+p251
+sS'Macro-composant de niveau 2'
+p252
+S'beton'
+p253
+sS'Unite'
+p254
+S'kg'
+p255
+sa(dp256
+S'Impact sur le changement climatique (kgCO2e)'
+p257
+F35607.056099999994
+sS'Quantite'
+p258
+F323700.50999999995
+sS'Produit'
+p259
+VBéton - BIM & Carbone
+p260
+sS'Macro-composant de niveau 1'
+p261
+S'6_EXT'
+p262
+sS'Macro-composant de niveau 0'
+p263
+S'Composant de base'
+p264
+sS'Version'
+p265
+S'Version 1'
+p266
+sS'Macro-composant de niveau 2'
+p267
+S'beton'
+p268
+sS'Unite'
+p269
+S'kg'
+p270
+sa(dp271
+S'Impact sur le changement climatique (kgCO2e)'
+p272
+F32.75712
+sS'Quantite'
+p273
+F297.79199999999997
+sS'Produit'
+p274
+VBéton - BIM & Carbone
+p275
+sS'Macro-composant de niveau 1'
+p276
+S'5_SON'
+p277
+sS'Macro-composant de niveau 0'
+p278
+S'Composant de base'
+p279
+sS'Version'
+p280
+S'Version 1'
+p281
+sS'Macro-composant de niveau 2'
+p282
+S'beton'
+p283
+sS'Unite'
+p284
+S'kg'
+p285
+sa(dp286
+S'Impact sur le changement climatique (kgCO2e)'
+p287
+F73836.096000000005
+sS'Quantite'
+p288
+F6153.0080000000007
+sS'Produit'
+p289
+S'Peinture - BIM & Carbone'
+p290
+sS'Macro-composant de niveau 1'
+p291
+S'5_AIG'
+p292
+sS'Macro-composant de niveau 0'
+p293
+S'Composant de base'
+p294
+sS'Version'
+p295
+S'Version 1'
+p296
+sS'Macro-composant de niveau 2'
+p297
+S'peinture'
+p298
+sS'Unite'
+p299
+S'kg'
+p300
+sa(dp301
+S'Impact sur le changement climatique (kgCO2e)'
+p302
+F0.4032
+sS'Quantite'
+p303
+F0.112
+sS'Produit'
+p304
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p305
+sS'Macro-composant de niveau 1'
+p306
+S'5_AIG'
+p307
+sS'Macro-composant de niveau 0'
+p308
+S'Composant de base'
+p309
+sS'Version'
+p310
+S'Version 1'
+p311
+sS'Macro-composant de niveau 2'
+p312
+S'metaux'
+p313
+sS'Unite'
+p314
+S'kg'
+p315
+sa(dp316
+S'Impact sur le changement climatique (kgCO2e)'
+p317
+F0.0111
+sS'Quantite'
+p318
+F0.0030000000000000001
+sS'Produit'
+p319
+S'Plastiques - BIM & Carbone'
+p320
+sS'Macro-composant de niveau 1'
+p321
+S'5_AIG'
+p322
+sS'Macro-composant de niveau 0'
+p323
+S'Composant de base'
+p324
+sS'Version'
+p325
+S'Version 1'
+p326
+sS'Macro-composant de niveau 2'
+p327
+S'plastiques'
+p328
+sS'Unite'
+p329
+S'kg'
+p330
+sa(dp331
+S'Impact sur le changement climatique (kgCO2e)'
+p332
+F994.21174999999994
+sS'Quantite'
+p333
+F2840.605
+sS'Produit'
+p334
+S'Sable, granulats, roches - BIM & Carbone'
+p335
+sS'Macro-composant de niveau 1'
+p336
+S'5_AIG'
+p337
+sS'Macro-composant de niveau 0'
+p338
+S'Composant de base'
+p339
+sS'Version'
+p340
+S'Version 1'
+p341
+sS'Macro-composant de niveau 2'
+p342
+S'sable_granulats_roches'
+p343
+sS'Unite'
+p344
+S'kg'
+p345
+sa(dp346
+S'Impact sur le changement climatique (kgCO2e)'
+p347
+F-0.029520000000000001
+sS'Quantite'
+p348
+F0.16400000000000001
+sS'Produit'
+p349
+VAutres matériaux biosourcés - BIM & Carbone
+p350
+sS'Macro-composant de niveau 1'
+p351
+S'5_AIG'
+p352
+sS'Macro-composant de niveau 0'
+p353
+S'Composant de base'
+p354
+sS'Version'
+p355
+S'Version 1'
+p356
+sS'Macro-composant de niveau 2'
+p357
+S'autres_materiaux_biosources'
+p358
+sS'Unite'
+p359
+S'kg'
+p360
+sa(dp361
+S'Impact sur le changement climatique (kgCO2e)'
+p362
+F0.011990000000000001
+sS'Quantite'
+p363
+F0.109
+sS'Produit'
+p364
+VBéton - BIM & Carbone
+p365
+sS'Macro-composant de niveau 1'
+p366
+S'5_AIG'
+p367
+sS'Macro-composant de niveau 0'
+p368
+S'Composant de base'
+p369
+sS'Version'
+p370
+S'Version 1'
+p371
+sS'Macro-composant de niveau 2'
+p372
+S'beton'
+p373
+sS'Unite'
+p374
+S'kg'
+p375
+sa.

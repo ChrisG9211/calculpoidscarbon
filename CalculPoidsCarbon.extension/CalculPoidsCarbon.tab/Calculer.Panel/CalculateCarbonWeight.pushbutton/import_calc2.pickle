@@ -1,0 +1,700 @@
+(lp0
+(dp1
+VVersion
+p2
+VVersion 1
+p3
+sVMacro-composant de niveau 0
+p4
+VComposant de base
+p5
+sVMacro-composant de niveau 1
+p6
+V2_STR
+p7
+sVMacro-composant de niveau 2
+p8
+Vbeton
+p9
+sVProduit
+p10
+VBéton - BIM & Carbone
+p11
+sVQuantité
+p12
+F21051748.81900002
+sVUnité
+p13
+Vkg
+p14
+sVImpact sur le changement climatique (kgCO2e)
+p15
+F2315692.370090002
+sa(dp16
+g2
+VVersion 1
+p17
+sg4
+VComposant de base
+p18
+sg6
+V2_STR
+p19
+sg8
+Vbois
+p20
+sg10
+VBois - BIM & Carbone
+p21
+sg12
+F124673.09299999996
+sg13
+Vkg
+p22
+sg15
+F13714.040229999997
+sa(dp23
+g2
+VVersion 1
+p24
+sg4
+VComposant de base
+p25
+sg6
+V2_STR
+p26
+sg8
+Vmetaux
+p27
+sg10
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p28
+sg12
+F54112.42600000002
+sg13
+Vkg
+p29
+sg15
+F194804.7336000001
+sa(dp30
+g2
+VVersion 1
+p31
+sg4
+VComposant de base
+p32
+sg6
+V2_STR
+p33
+sg8
+Vsable_granulats_roches
+p34
+sg10
+VSable, granulats, roches - BIM & Carbone
+p35
+sg12
+F17238.773
+sg13
+Vkg
+p36
+sg15
+F6033.57055
+sa(dp37
+g2
+VVersion 1
+p38
+sg4
+VComposant de base
+p39
+sg6
+V4_SOE
+p40
+sg8
+Vbeton
+p41
+sg10
+VBéton - BIM & Carbone
+p42
+sg12
+F1006941.5909999994
+sg13
+Vkg
+p43
+sg15
+F110763.57500999994
+sa(dp44
+g2
+VVersion 1
+p45
+sg4
+VComposant de base
+p46
+sg6
+V4_SOE
+p47
+sg8
+Vverre
+p48
+sg10
+VVerre - BIM & Carbone
+p49
+sg12
+F5778.334000000002
+sg13
+Vkg
+p50
+sg15
+F8667.501000000002
+sa(dp51
+g2
+VVersion 1
+p52
+sg4
+VComposant de base
+p53
+sg6
+V4_SOE
+p54
+sg8
+Vbois
+p55
+sg10
+VBois - BIM & Carbone
+p56
+sg12
+F30276.120000000014
+sg13
+Vkg
+p57
+sg15
+F3330.3732000000014
+sa(dp58
+g2
+VVersion 1
+p59
+sg4
+VComposant de base
+p60
+sg6
+V4_SOE
+p61
+sg8
+Vmetaux
+p62
+sg10
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p63
+sg12
+F2447.4140000000016
+sg13
+Vkg
+p64
+sg15
+F8810.690400000007
+sa(dp65
+g2
+VVersion 1
+p66
+sg4
+VComposant de base
+p67
+sg6
+V4_SOE
+p68
+sg8
+Vsable_granulats_roches
+p69
+sg10
+VSable, granulats, roches - BIM & Carbone
+p70
+sg12
+F3506.131
+sg13
+Vkg
+p71
+sg15
+F1227.1458499999999
+sa(dp72
+g2
+VVersion 1
+p73
+sg4
+VComposant de base
+p74
+sg6
+V4_SOE
+p75
+sg8
+Vpeinture
+p76
+sg10
+VPeinture - BIM & Carbone
+p77
+sg12
+F223.249
+sg13
+Vkg
+p78
+sg15
+F2678.988
+sa(dp79
+g2
+VVersion 1
+p80
+sg4
+VComposant de base
+p81
+sg6
+V4_SOE
+p82
+sg8
+Vplastiques
+p83
+sg10
+VPlastiques - BIM & Carbone
+p84
+sg12
+F0.109
+sg13
+Vkg
+p85
+sg15
+F0.4033
+sa(dp86
+g2
+VVersion 1
+p87
+sg4
+VComposant de base
+p88
+sg6
+V3_FAC
+p89
+sg8
+Vverre
+p90
+sg10
+VVerre - BIM & Carbone
+p91
+sg12
+F26366.177000000036
+sg13
+Vkg
+p92
+sg15
+F39549.26550000005
+sa(dp93
+g2
+VVersion 1
+p94
+sg4
+VComposant de base
+p95
+sg6
+V3_FAC
+p96
+sg8
+Vplastiques
+p97
+sg10
+VPlastiques - BIM & Carbone
+p98
+sg12
+F2370.818
+sg13
+Vkg
+p99
+sg15
+F8772.026600000001
+sa(dp100
+g2
+VVersion 1
+p101
+sg4
+VComposant de base
+p102
+sg6
+V3_FAC
+p103
+sg8
+Vbeton
+p104
+sg10
+VBéton - BIM & Carbone
+p105
+sg12
+F12254.335000000023
+sg13
+Vkg
+p106
+sg15
+F1347.9768500000025
+sa(dp107
+g2
+VVersion 1
+p108
+sg4
+VComposant de base
+p109
+sg6
+V3_FAC
+p110
+sg8
+Vbois
+p111
+sg10
+VBois - BIM & Carbone
+p112
+sg12
+F35738.69699999996
+sg13
+Vkg
+p113
+sg15
+F3931.256669999995
+sa(dp114
+g2
+VVersion 1
+p115
+sg4
+VComposant de base
+p116
+sg6
+V3_FAC
+p117
+sg8
+Vsable_granulats_roches
+p118
+sg10
+VSable, granulats, roches - BIM & Carbone
+p119
+sg12
+F2580.2529999999997
+sg13
+Vkg
+p120
+sg15
+F903.0885499999998
+sa(dp121
+g2
+VVersion 1
+p122
+sg4
+VComposant de base
+p123
+sg6
+V3_FAC
+p124
+sg8
+Vmetaux
+p125
+sg10
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p126
+sg12
+F4844.820999999995
+sg13
+Vkg
+p127
+sg15
+F17441.355599999984
+sa(dp128
+g2
+VVersion 1
+p129
+sg4
+VComposant de base
+p130
+sg6
+V3_TOI
+p131
+sg8
+Vverre
+p132
+sg10
+VVerre - BIM & Carbone
+p133
+sg12
+F3840.5519999999997
+sg13
+Vkg
+p134
+sg15
+F5760.8279999999995
+sa(dp135
+g2
+VVersion 1
+p136
+sg4
+VComposant de base
+p137
+sg6
+V3_TOI
+p138
+sg8
+Vbeton
+p139
+sg10
+VBéton - BIM & Carbone
+p140
+sg12
+F2577393.0340000014
+sg13
+Vkg
+p141
+sg15
+F283513.23374000017
+sa(dp142
+g2
+VVersion 1
+p143
+sg4
+VComposant de base
+p144
+sg6
+V5_AIG
+p145
+sg8
+Vplastiques
+p146
+sg10
+VPlastiques - BIM & Carbone
+p147
+sg12
+F12733.557
+sg13
+Vkg
+p148
+sg15
+F47114.1609
+sa(dp149
+g2
+VVersion 1
+p150
+sg4
+VComposant de base
+p151
+sg6
+V5_AIG
+p152
+sg8
+Vmetaux
+p153
+sg10
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p154
+sg12
+F1653.9640000000002
+sg13
+Vkg
+p155
+sg15
+F5954.2704
+sa(dp156
+g2
+VVersion 1
+p157
+sg4
+VComposant de base
+p158
+sg6
+V5_AIG
+p159
+sg8
+Vbeton
+p160
+sg10
+VBéton - BIM & Carbone
+p161
+sg12
+F6502.4490000000005
+sg13
+Vkg
+p162
+sg15
+F715.26939
+sa(dp163
+g2
+VVersion 1
+p164
+sg4
+VComposant de base
+p165
+sg6
+V5_PLB
+p166
+sg8
+Vplastiques
+p167
+sg10
+VPlastiques - BIM & Carbone
+p168
+sg12
+F3.182
+sg13
+Vkg
+p169
+sg15
+F11.7734
+sa(dp170
+g2
+VVersion 1
+p171
+sg4
+VComposant de base
+p172
+sg6
+V5_PLB
+p173
+sg8
+Vmetaux
+p174
+sg10
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p175
+sg12
+F2.644
+sg13
+Vkg
+p176
+sg15
+F9.518400000000002
+sa(dp177
+g2
+VVersion 1
+p178
+sg4
+VComposant de base
+p179
+sg6
+V5_PLB
+p180
+sg8
+Vsable_granulats_roches
+p181
+sg10
+VSable, granulats, roches - BIM & Carbone
+p182
+sg12
+F18.808
+sg13
+Vkg
+p183
+sg15
+F6.5828
+sa(dp184
+g2
+VVersion 1
+p185
+sg4
+VComposant de base
+p186
+sg6
+V5_SSI
+p187
+sg8
+Vmetaux
+p188
+sg10
+VMétaux (hors acier, aluminium) - BIM & Carbone
+p189
+sg12
+F0.034
+sg13
+Vkg
+p190
+sg15
+F0.12240000000000001
+sa(dp191
+g2
+VVersion 1
+p192
+sg4
+VComposant de base
+p193
+sg6
+V5_SSI
+p194
+sg8
+Vplastiques
+p195
+sg10
+VPlastiques - BIM & Carbone
+p196
+sg12
+F0.621
+sg13
+Vkg
+p197
+sg15
+F2.2977000000000003
+sa(dp198
+g2
+VVersion 1
+p199
+sg4
+VComposant de base
+p200
+sg6
+V5_SSI
+p201
+sg8
+Vpeinture
+p202
+sg10
+VPeinture - BIM & Carbone
+p203
+sg12
+F4.272
+sg13
+Vkg
+p204
+sg15
+F51.264
+sa(dp205
+g2
+VVersion 1
+p206
+sg4
+VComposant de base
+p207
+sg6
+V3_FAC_ORN
+p208
+sg8
+Vbeton
+p209
+sg10
+VBéton - BIM & Carbone
+p210
+sg12
+F22217.247999999996
+sg13
+Vkg
+p211
+sg15
+F2443.8972799999997
+sa(dp212
+g2
+VVersion 1
+p213
+sg4
+VComposant de base
+p214
+sg6
+V2_STR
+p215
+sg8
+Vbeton
+p216
+sg10
+VBéton - BIM & Carbone
+p217
+sg12
+F21048943.413000006
+sg13
+Vkg
+p218
+sg15
+F2315383.775430001
+sa.
