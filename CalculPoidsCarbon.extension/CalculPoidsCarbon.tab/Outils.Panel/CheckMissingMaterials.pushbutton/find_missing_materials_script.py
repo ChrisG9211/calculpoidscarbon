@@ -3,7 +3,7 @@
 import clr
 from Autodesk.Revit.UI import TaskDialog
 from Autodesk.Revit.DB import FilteredElementCollector, BuiltInParameter
-
+import os
 doc = __revit__.ActiveUIDocument.Document
 clr.AddReference("RevitApi")
 clr.AddReference("RevitAPI")
@@ -109,6 +109,17 @@ no_material = []
 unit = "kg"
 quantity = 0
 
+# Define variables for directories at given paths
+directory = "carbon_data"
+new_dir_path = os.path.normpath(os.path.expanduser("~/Desktop"))
+path = os.path.join(new_dir_path, directory)
+
+# Declare boolean variables to check if paths exist
+path_exists = os.path.exists(path)
+
+# If paths do not exist, then create
+if not path_exists:
+    os.mkdir(path)
 
 def volume_conv(volume_in_cubic_foot):
     return volume_in_cubic_foot / 35.3147
@@ -195,8 +206,10 @@ if len(no_material) > 0:
     for item in missing_materials_list:
         worksheet.append(item)
 
+    file_name = os.path.join(path, "materiau.x_manquant.s.xlsx")
+
     # Save the workbook to a file
-    workbook.save("materiau.x_manquant.s.xlsx")
+    workbook.save(file_name)
 
     # Create an instance of TaskDialog
     dialog = TaskDialog("Missing Materials")
