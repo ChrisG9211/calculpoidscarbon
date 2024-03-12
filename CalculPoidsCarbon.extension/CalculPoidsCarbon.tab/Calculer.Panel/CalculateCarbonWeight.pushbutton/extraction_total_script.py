@@ -1299,8 +1299,7 @@ if req_params:
         type_data_for_phase,
     )
 
-    host_name = socket.gethostname()
-    ip_address = socket.gethostbyname(host_name)
+    ip_address = socket.gethostbyname("PO-ARP-6155")
 
     if final_phase_calcul:
         Base = declarative_base()
