@@ -11,9 +11,8 @@ required_packages = [
 ]
 
 # Form the pip install command
-pip_command = ["python3.8.5", "-m" "pip3", "install"] + required_packages
+pip_command = ["pip", "install"] + required_packages
 
 # Execute the command
 def install_packages():
     return subprocess.run(pip_command, check=True)
-

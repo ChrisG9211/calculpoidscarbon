@@ -1,9 +1,28 @@
 #! python3
 # -*- coding: utf-8 -*-
+import site
+import sys
+
+path_env = os.environ.get("PATH")
+path_list = path_env.split(os.pathsep)
+path_appended = False
+for path in path_list:
+    if path.endswith("Python38\Lib\site-packages"):
+        site.USER_SITE = path
+        sys.path.insert(0, path)
+    if not path_appended:
+        path_list.insert(0, site.getusersitepackages())
+        sys.path.insert(0, site.getusersitepackages())
+        path_appended = True
+site.USER_SITE = site.getusersitepackages()
+site.addsitedir(site.getusersitepackages(), known_paths=None)
+sys.path.extend(site.getusersitepackages())
+
 import clr
 from Autodesk.Revit.UI import TaskDialog
 from Autodesk.Revit.DB import FilteredElementCollector, BuiltInParameter
 import os
+
 doc = __revit__.ActiveUIDocument.Document
 clr.AddReference("RevitApi")
 clr.AddReference("RevitAPI")
@@ -120,6 +139,7 @@ path_exists = os.path.exists(path)
 # If paths do not exist, then create
 if not path_exists:
     os.mkdir(path)
+
 
 def volume_conv(volume_in_cubic_foot):
     return volume_in_cubic_foot / 35.3147

@@ -12,7 +12,7 @@ path_env = os.environ.get("PATH")
 path_list = path_env.split(os.pathsep)
 path_appended = False
 for path in path_list:
-    if "Python38\Lib\site-packages" in path:
+    if path.endswith("Python38\Lib\site-packages"):
         site.USER_SITE = path
         sys.path.insert(0, path)
     if not path_appended:
