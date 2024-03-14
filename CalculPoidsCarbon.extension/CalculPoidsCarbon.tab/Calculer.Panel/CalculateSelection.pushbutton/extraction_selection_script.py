@@ -19,7 +19,6 @@ import copy
 import clr
 from Autodesk.Revit.UI import TaskDialog
 from Autodesk.Revit.DB import BuiltInParameter
-from pypac import get_pac, PACSession
 import datetime
 import openpyxl
 import os

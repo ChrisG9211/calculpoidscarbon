@@ -29,8 +29,6 @@ clr.AddReference("RevitAPI")
 clr.AddReference("RevitAPIUI")
 import openpyxl
 
-# has_material = IN[0]
-# filtered_elements = IN[1]
 # Create lists of element families and lists for mapping materials
 no_material_search = [
     "Mur de base",
