@@ -485,6 +485,11 @@ if phase_selected:
                 for view_template in FilteredElementCollector(doc).OfClass(View):
                     if view_template.IsTemplate:
                         pass
+            # Disable View Crop ("Cadrer la vue")
+            new_3d_view.CropBoxActive = False
+
+            # Enable "Masquer la zone cadrée" (Hide Crop Region)
+            new_3d_view.CropBoxVisible = False
             transaction.Commit()
         # Open the new 3D view
         __revit__.ActiveUIDocument.ActiveView = new_3d_view
