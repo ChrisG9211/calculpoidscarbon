@@ -10,18 +10,18 @@ import os
 
 path_env = os.environ.get("PATH")
 path_list = path_env.split(os.pathsep)
-# path_appended = False
+path_appended = False
 for path in path_list:
     if path.endswith("Python38\Lib\site-packages"):
         site.USER_SITE = path
         sys.path.insert(0, path)
-#     if not path_appended:
-#         path_list.insert(0, site.getusersitepackages())
-#         sys.path.insert(0, site.getusersitepackages())
-#         path_appended = True
-# site.USER_SITE = site.getusersitepackages()
-# site.addsitedir(site.getusersitepackages(), known_paths=None)
-# sys.path.extend(site.getusersitepackages())
+    if not path_appended:
+        path_list.insert(0, site.getusersitepackages())
+        sys.path.insert(0, site.getusersitepackages())
+        path_appended = True
+site.USER_SITE = site.getusersitepackages()
+site.addsitedir(site.getusersitepackages(), known_paths=None)
+sys.path.extend(site.getusersitepackages())
 
 # Import necessary modules
 import plotly.graph_objs as go
@@ -160,8 +160,7 @@ materiaux_inconnus = [
 ]
 
 # Create empty lists and define functions needed for code
-mat_not_in_db = []
-dico = []
+unit = "kg"
 quantity = 0
 
 
@@ -199,41 +198,41 @@ def round_3_decimals(number):
     """
     return round(number, 3)
 
+
+# Collect phases
+phases = FilteredElementCollector(doc).OfClass(Phase).ToElements()
 phase_names = ["Tous constructions nouveaux"]
 
 # Collect phases for when user chooses which phase to viusalise at importation
-for phas in FilteredElementCollector(doc).OfClass(Phase).ToElements():
+for phas in phases:
     phase_names.append(phas.Name)
 
-# Initialize an empty list to store filtered elements
 filtered_elements = []
 
-# Loop through all elements in the project
+# Filter out those whose family and created phase parameters are None
 for element in FilteredElementCollector(doc).WhereElementIsNotElementType().ToElements():
-    # Get the family and created phase parameters for the current element
     family_param = element.LookupParameter("Famille")
     phase_param = element.LookupParameter("Phase de création")
-    
-    # Check if both family and phase parameters are not None
+
     if family_param is not None and phase_param is not None:
         phase = element.get_Parameter(BuiltInParameter.PHASE_CREATED).AsValueString()
-        
-        # Check if the phase meets the conditions
-        if "Exi" not in phase and "EXI" not in phase and element.CreatedPhaseId is not None:
-            # Add the element to the filtered list
+
+        if (
+            "Exi" not in phase
+            and "EXI" not in phase
+            and element.CreatedPhaseId is not None
+        ):
             filtered_elements.append(element)
-            
-has_material_volume = []            
-very_small_number = 0.0001
+
+has_material_volume = []
 
 # Loop through filtered_elements to find those with material volumes
 for filtered_element in filtered_elements:
     materials = filtered_element.GetMaterialIds(False)
     volume = filtered_element.LookupParameter("Volume")
-    if filtered_element.Category.Name == "Garde-corps" or filtered_element.Category.Name == "Barreaux":
-        filtered_elements.remove(filtered_element)
+    famille = filtered_element.LookupParameter("Famille").AsValueString()
     for mat in materials:
-        if filtered_element.GetMaterialVolume(mat) >= very_small_number:
+        if filtered_element.GetMaterialVolume(mat) >= 0.000000001:
             has_material_volume.append(filtered_element)
     # Retrieve materials of elements with tangible dependent elements such as Mullions and Panels.
     if len(materials) == 0:
@@ -242,26 +241,21 @@ for filtered_element in filtered_elements:
             dependent_id = doc.GetElement(dependent_id)
             materials = dependent_id.GetMaterialIds(False)
             for mat in materials:
-                if dependent_id.GetMaterialVolume(mat) >= very_small_number:
+                if dependent_id.GetMaterialVolume(mat) >= 0.000000001:
                     has_material_volume.append(dependent_id)
 
-# # Create a new list to discard hand rails and bars as can't calculate for now
-# has_material_volume = [
-#     a
-#     for a in has_material_volume
-#     if a is not None
-#     and a.Category is not None
-#     and a.Category.Name != "Garde-corps"
-#     and a.Category.Name != "Barreaux"
-# ]
+# Create a new list to discard hand rails and bars as can't calculate for now
+has_material_volume = [
+    a
+    for a in has_material_volume
+    if a is not None
+    and a.Category is not None
+    and a.Category.Name != "Garde-corps"
+    and a.Category.Name != "Barreaux"
+]
 
 # Define list to keep contrat cadre elements
 to_remove = []
-
-# Define list for elements with unknown material classes
-elements_with_unknown_materials = []
-unit = "kg"
-elem_mats = []
 
 # Remove all contrat cadre elements
 for element in has_material_volume:
@@ -273,13 +267,25 @@ for element in has_material_volume:
             and contrat_cadre_param.AsValueString() == "Oui"
         ):
             to_remove.append(element)
-    materials = element.GetMaterialIds(False)
-    element_id = element.Id
+for item in to_remove:
+    has_material_volume.remove(item)
+
+# Define list for elements with unknown material classes
+elements_with_unknown_materials = []
+
+mat_not_in_db = []
+dico = []
+elem_mats = []
+
+# Loop through final filtered list to retrieve data and update dico
+for elem in has_material_volume:
+    materials = elem.GetMaterialIds(False)
+    element_id = elem.Id
     lot = "N/A"
     for material in materials:
         elem_mat = doc.GetElement(material)
-        volume = volume_conv(element.GetMaterialVolume(material))
-        sous_projet = element.LookupParameter("Sous-projet").AsValueString()
+        volume = volume_conv(elem.GetMaterialVolume(material))
+        sous_projet = elem.LookupParameter("Sous-projet").AsValueString()
         # If material class is not "Generic", "Miscellaneous", "Non attribuée", etc. then continue
         if elem_mat.MaterialClass not in materiaux_inconnus:
             try:
@@ -292,7 +298,7 @@ for element in has_material_volume:
                     mat_not_in_db.append(elem_mat.MaterialClass)
                     quantity = "Material not in database"
                     # Collect the element triggering an alert
-                    elements_with_unknown_materials.append(element)
+                    elements_with_unknown_materials.append(elem)
                 dico.append(
                     {
                         "sous-projet": sous_projet,
@@ -301,15 +307,12 @@ for element in has_material_volume:
                         "unit": str(unit),
                         "component_id": str(elem_mats[-1]),
                         "element_id": str(element_id),
-                        "category": element.Category.Name,
+                        "category": elem.Category.Name,
                         "quantity": round_3_decimals(quantity),
                     }
                 )
-            except Exception as e:
+            except:
                 pass
-                #print(e)
-for item in to_remove:
-    has_material_volume.remove(item)    
 
 # Display TaskDialog with the list of elements triggering alerts
 if len(elements_with_unknown_materials) > 0:
@@ -325,7 +328,7 @@ if len(elements_with_unknown_materials) > 0:
 
     # Write elements with unknown materials to the worksheet
     for element in elements_with_unknown_materials:
-        worksheet.append([str(element.Id), element.Name])
+        worksheet.append([str(element.Id), element.Category.Name])
 
     # Save the workbook to a file
     workbook.save("materiau.x_classe.s_inconnu.s.xlsx")
@@ -362,7 +365,7 @@ def remove_duplicate_dicts(lst):
 
 dico = remove_duplicate_dicts(dico)
 # Iterate over each dictionary in the dico
-for dictionary in dico:
+for i, dictionary in enumerate(dico):
     sous_projet = dictionary["sous-projet"]
     lot = dictionary["lot"]
     component_id = dictionary["component_id"]
@@ -1042,7 +1045,9 @@ if req_params:
     # Write file at given directory recently created
     with open(os.path.join(path, html_file), "w", encoding="utf-8") as file:
         file.write(fig.to_html())
+        
     lst = []
+    
     for key, value in element_quantity_dict_copy.items():
         if value < 1:
             lst.append({value: key})

@@ -490,6 +490,7 @@ if phase_selected:
 
             # Enable "Masquer la zone cadrée" (Hide Crop Region)
             new_3d_view.CropBoxVisible = False
+            
             transaction.Commit()
         # Open the new 3D view
         __revit__.ActiveUIDocument.ActiveView = new_3d_view
