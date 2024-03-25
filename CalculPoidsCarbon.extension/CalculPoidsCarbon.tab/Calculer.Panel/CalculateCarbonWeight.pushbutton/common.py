@@ -1,0 +1,1 @@
+from main_script import list_of_results, element_quantity_dict, category_quantity_dict, doc, path
